@@ -13,9 +13,12 @@ function buscarAmigo(amigos, nombre) {
   //  var amigos = [{ nombre: 'toni', edad: 33 } , { nombre: 'Emi', edad: 25 }];
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
-  // Tu código aca:
-  
+  // Tu código aca: 
+  return amigos.find(amigo=>amigo.nombre === nombre)  
 }
+var amigos = [{ nombre: 'toni', edad: 33 } , { nombre: 'Emi', edad: 25 }];
+console.log(buscarAmigo(amigos, 'toni'))
+
 
 // No modifiques nada debajo de esta linea //
 

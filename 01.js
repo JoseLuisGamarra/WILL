@@ -9,10 +9,10 @@ function soloNumeros(array) {
   // Debe devolver un arreglo con solo los enteros.
   // Ej: 
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
-
   // Tu código aca:
-
-}
+  return array.filter(elemento => !isNaN(elemento) )
+ }
+console.log(soloNumeros([1, 'Henry', 2]))
 
 // No modifiques nada debajo de esta linea //
 
