@@ -16,12 +16,6 @@ function stringMasLarga(strings) {
 }
 console.log(stringMasLarga(['hi', 'hello', 'ni hao', 'guten tag']))
 
-const var1=1
-const var2=2
-const var3=var1<var2 ? "si" : "no"
-console.log(var3)
-
-
 // No modifiques nada debajo de esta linea //
 
 module.exports = stringMasLarga

@@ -9,11 +9,23 @@ function crearClasePersona() {
     constructor(nombre, edad, hobbies, amigos) {
       // El constructor de la clase Persona recibe nombre (string), edad (integer), hobbies (array de strings), amigos (array de objetos)
       // Inicializar las propiedades de la persona con los valores recibidos como argumento
-
       // Tu código aca:
-
+      this.nombre = nombre,
+      this.edad = edad,
+      this.hobbies = hobbies,
+      this.amigos = amigos
+      this.detalle = function() {
+        return { 
+          Nombre: this.nombre,
+          Edad: this.edad,
+          hobbies: this.hobbies,
+          amigos: this.amigos
+        }
+        
     }
+    console.log(Persona(jose,38,luis,futbol))
 
+    
     addFriend(nombre, edad) {
       // El método 'addFriend' recibe un string 'nombre' y un entero 'edad' y debe agregar un objeto:
       // { nombre: nombre, edad: edad} al arreglo de amigos de la persona.
